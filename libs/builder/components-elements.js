@@ -1370,8 +1370,11 @@ Vvveb.Components.add("elements/carousel", {
 				for (i in dataset) {
 					element.swiper.params[i] = dataset[i];
 					element.dataset[i] = dataset[i];
-				}; 
-				element.dataset["loop"] = "false";//not compatible with builder due to dom rearrangement, live only
+				};
+				
+				element.swiper.params["loop"] = false;
+				element.dataset["loop"] = false;//not compatible with builder due to dom rearrangement, live only
+				
 				element.swiper.update(); 
 			}, 1000);
 			
