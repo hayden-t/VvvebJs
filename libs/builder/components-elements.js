@@ -1285,6 +1285,8 @@ Vvveb.Components.add("elements/carousel", {
 			value = {"waitForTransition":true,"enabled":value,"delay":element.dataset.delay};
 		}
 
+		if (property.key == "loop")value = false;//not compatible with builder due to dom rearrangement, live only
+
 		if (value == 'true') value= true;
 		if (value == 'false') value = false;
 
