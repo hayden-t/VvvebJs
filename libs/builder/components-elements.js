@@ -1464,7 +1464,7 @@ Vvveb.Components.add("elements/carousel", {
 	inputtype: CheckboxInput,
 	inline:true,
         col:6
-    },{	name: "Loop",
+    },{	name: "Loop (live only)",
         key: "loop",
 	htmlAttr:"data-loop",
 	inputtype: CheckboxInput,
